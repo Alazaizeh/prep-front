@@ -27,6 +27,7 @@ export class FavCard extends Component {
   };
 
   updateFav = (e) => {
+    e.preventDefault();
     axios
       .put(
         `https://prep12.herokuapp.com/editFavDrinks/${this.props.drink.drinkId}?email=omx302@gmail.com`,
