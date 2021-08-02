@@ -38,6 +38,8 @@ export class FavCard extends Component {
         }
       )
       .then((result) => this.props.reRenderData());
+
+    this.handleClose();
   };
 
   render() {
